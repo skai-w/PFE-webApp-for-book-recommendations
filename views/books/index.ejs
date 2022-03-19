@@ -1,0 +1,170 @@
+
+    <div class="row">
+        <div class="mx-auto" >
+            <div class="titre_br">
+               <div class="banner-text">
+                <span class="msg1 h3">Trouver votre prochain livre préféré</span>
+                <p>drame , comedie , triller et plein d’autre genre </p>
+               </div>
+            </div>
+        <form action="/books" method="GET" class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" name="titre" value="<%= searchOptions.titre %>" aria-label="Search" style="width: 430px;">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+          <button onclick="myFunction()" class="btn btn-outline-dark my-2 my-sm-0 ml-2" type="button">
+            <i class="fas fa-filter"></i>
+          </button>
+        </form> 
+        <br>
+            
+            <div id="myDIV" style="display: none;">
+                <h5>fitrer le resultat</h5>
+                <form action="/books" method="POST">
+                    <div class="row register-form">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="titre " name="titre" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="auteur " name="auteur" value="" />
+                            </div>
+                            <div class="form-group">
+                               <select class="form-select form-control" aria-label="Default select example" name="genre">
+                                   <option selected>genre </option>
+                                   <option value="romance">romance</option>
+                                   <option value="horror">horror</option>
+                                   <option value="comedy">comedy</option>
+                                   <option value="fiction">fiction</option>
+                                   <option value="polar">polar</option>
+                                   <option value="histoire">histoire</option>
+                                   <option value="Mystere">Mystere</option>
+                                   <option value="Policier">Policier</option>
+                                   <option value="drame">drame</option>
+                                   <option value="thriller">thriller</option>
+                                   <option value="classique">classique</option>
+                                   <option value="cuisine">cuisine</option>
+                                   <option value="auto-assistance">auto-assistance</option>
+                                   <option value="coin jeunesse">coin jeunesse</option>
+                                   <option value="universitaire">universitaire</option>
+
+                                 </select>
+                           </div>
+                           
+                            
+                        </div>
+                        <div class="col-md-6">
+   
+                            <div class="form-group">
+                               <select class="form-select form-control" aria-label="Default select example" name="willaya">
+                               <option selected>willaya </option>
+                               <option value="Adrar">1-Adrar</option>
+                              <option value="Chlef">2-Chlef</option>
+                              <option value="Laghouat">3-Laghouat</option>
+                              <option value="Oum El Bouaghi">4-Oum El Bouaghi</option>
+                              <option value="Batna">5-Batna</option>
+                              <option value="Béjaïa">6-Béjaïa</option>
+                              <option value="Biskra">7-Biskra</option>
+                              <option value="Béchar">8-Béchar</option>
+                              <option value="Blida">9-Blida</option>
+                              <option value="Bouira">10-Bouira</option>
+                              <option value="Tamanrasset">11-Tamanrasset</option>
+                              <option value="Tébessa">12-Tébessa</option>
+                              <option value="Tlemcen">13-Tlemcen</option>
+                              <option value="Tiaret">14-Tiaret</option>
+                              <option value="Tizi-Ouzou">15-Tizi-Ouzou</option>
+                              <option value="Alger">16-Alger</option>
+                              <option value="Djelfa">17-Djelfa</option>
+                              <option value="Jijel">18-Jijel</option>
+                              <option value="Sétif">19-Sétif</option>
+                              <option value="Saida">20-Saida</option>
+                              <option value="Skikda">21-Skikda</option>
+                              <option value="Sidi-Bel-Abbès">22-Sidi-Bel-Abbès</option>
+                              <option value="Annaba">23-Annaba</option>
+                              <option value="Guelma">24-Guelma</option>
+                              <option value="Constantine">25-Constantine</option>
+                              <option value="Médéa">26-Médéa</option>
+                              <option value="Mostaganem">27-Mostaganem</option>
+                              <option value="M'Sila">28-M'Sila</option>
+                              <option value="Mascara">29-Mascara</option>
+                              <option value="Ouargla">30-Ouargla</option>
+                              <option value="Oran">31-Oran</option>
+                              <option value="El-Bayadh">32-El-Bayadh</option>
+                              <option value="Illizi">33-Illizi</option>
+                              <option value="Bordj-Bou-Arreridj">34-Bordj-Bou-Arreridj</option>
+                              <option value="Boumerdès">35-Boumerdès</option>
+                              <option value="El-Tarf">36-El-Tarf</option>
+                              <option value="Tindouf">37-Tindouf</option>
+                              <option value="Tissemsilt">38-Tissemsilt</option>
+                              <option value="El-Oued">39-El-Oued</option>
+                              <option value="Khenchela">40-Khenchela</option>
+                              <option value="Souk-Ahras">41-Souk-Ahras</option>
+                              <option value="Tipaza">42-Tipaza</option>
+                              <option value="Mila">43-Mila</option>
+                              <option value="Aïn-Defla">44-Aïn-Defla</option>
+                              <option value="Naâma">45-Naâma</option>
+                              <option value="Aïn-Témouchent">46-Aïn-Témouchent</option>
+                              <option value="Ghardaia">47-Ghardaia</option>
+                              <option value="Relizane">48-Relizane</option>
+
+                               </select>
+                           </div>
+                           <div class="form-group">
+                               <input type="text" class="form-control" placeholder="adresse" name="adr" value="" />
+                           </div>
+                          
+                           
+                            <input type="submit" class="btn btnconn"  value="Ajouter"/>
+                        </div>
+                </div>
+              </form>
+            </div>
+        </div>
+    </div> 
+  <br>
+  <br>
+<div class="container">
+    <div class="row">
+      <% if (books.lenght == 0){ %>
+        <button type="button" class="btn btn-dark btn-block">
+          <a class="nav-link text-white" href="#">voir les offres</a>
+        </button>
+     <% } %> 
+    <% books.forEach(book => { %>
+        <div class="col-sm-6 col-md-4 col-lg-3 py-5">
+            <div class="card">
+                <img class="image-fluid" src="<%= book.image %>">
+                <div class="card-body">
+                    <div class="card-title h5"><%= book.titre %></div>
+                    <p class="card-text"><%= book.auteur %></p>
+                    <button type="button" class="btn btn-dark btn-block">
+                          <a class="nav-link text-white" href="#">voir les offres</a>
+                        </button>
+                        <% if(locals.session.isAuth){ %>  
+                            <% if(locals.session.type == "seller"){ %>
+                          <button type="button" class="btn btn-dark btn-block">
+                            <a class="nav-link text-white" href="#">ajouter une offre</a>
+                          </button>
+                          <form action="">
+                            <div>
+                              <label >Prix:</label>
+                              <input type="number" name="price" min="1" value="">
+                              <button type="submit">OK</button>
+                            </div>
+                          </form>
+                          <% } %>
+                         <% } %>
+                         <% if(locals.session.isAuth){ %>  
+                          <% if(locals.session.type == "user"){ %>
+                        <button type="button" class="btn btn-dark btn-block">
+                          <a class="nav-link text-white" href="#">avis</a>
+                        </button>
+                        <% } %>
+                       <% } %>
+                      </div> 
+                  </div>
+              </div>
+         <% }) %>
+      </div>
+  </div>
+  

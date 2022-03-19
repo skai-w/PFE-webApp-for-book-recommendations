@@ -1,0 +1,124 @@
+<div class="container-fluid" style="background-image: url(../../images/bookbackground.png);">
+     <div class="container register mt-55 py-5">
+                      <div class="row">
+                          <div class="col-md-3 register-left">
+                              <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                              <h3>bienvenue</h3>
+                              <p>si vous possedez deja un compte veiller vous connecter</p>
+                              <div class="text-center"  >
+                                  <a class="btn btnconn2" style="color: #fff;"  href="/sellers/login" role="button">Se connecter</a>
+              
+                                   </div>
+                          </div>
+                          <div class="col-md-9 register-right">
+                            <div class="mt-3" style="text-align: right;">
+                                <a class="btn btnconn" role="button" style="color: #fff;width:40%" href="/users/new">cree un compte client</a>
+
+                                </div>
+                              <div class="tab-content" id="myTabContent">
+                                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                      <h3 class="register-heading">cree votre compte vendeur</h3>
+                                      <form action="/sellers" method="POST">
+                                      <div class="row register-form">
+                                          <div class="col-md-6">
+                                              <div class="form-group">
+                                                  <input type="text" class="form-control" placeholder="First Name *" name="name" value="" />
+                                              </div>
+                                              <div class="form-group">
+                                                  <input type="text" class="form-control" placeholder="Last Name *" name="surname" value="" />
+                                              </div>
+                                              <div class="form-group">
+                                                <select class="form-select form-control" aria-label="Default select example" name="willaya">
+                                                <option selected>willaya *</option>
+                                               <option value="Adrar">1-Adrar</option>
+                                               <option value="Chlef">2-Chlef</option>
+                                               <option value="Laghouat">3-Laghouat</option>
+                                               <option value="Oum El Bouaghi">4-Oum El Bouaghi</option>
+                                               <option value="Batna">5-Batna</option>
+                                               <option value="Béjaïa">6-Béjaïa</option>
+                                               <option value="Biskra">7-Biskra</option>
+                                               <option value="Béchar">8-Béchar</option>
+                                               <option value="Blida">9-Blida</option>
+                                               <option value="Bouira">10-Bouira</option>
+                                               <option value="Tamanrasset">11-Tamanrasset</option>
+                                               <option value="Tébessa">12-Tébessa</option>
+                                               <option value="Tlemcen">13-Tlemcen</option>
+                                               <option value="Tiaret">14-Tiaret</option>
+                                               <option value="Tizi-Ouzou">15-Tizi-Ouzou</option>
+                                               <option value="Alger">16-Alger</option>
+                                               <option value="Djelfa">17-Djelfa</option>
+                                               <option value="Jijel">18-Jijel</option>
+                                               <option value="Sétif">19-Sétif</option>
+                                               <option value="Saida">20-Saida</option>
+                                               <option value="Skikda">21-Skikda</option>
+                                               <option value="Sidi-Bel-Abbès">22-Sidi-Bel-Abbès</option>
+                                               <option value="Annaba">23-Annaba</option>
+                                               <option value="Guelma">24-Guelma</option>
+                                               <option value="Constantine">25-Constantine</option>
+                                               <option value="Médéa">26-Médéa</option>
+                                               <option value="Mostaganem">27-Mostaganem</option>
+                                               <option value="M'Sila">28-M'Sila</option>
+                                               <option value="Mascara">29-Mascara</option>
+                                               <option value="Ouargla">30-Ouargla</option>
+                                               <option value="Oran">31-Oran</option>
+                                               <option value="El-Bayadh">32-El-Bayadh</option>
+                                               <option value="Illizi">33-Illizi</option>
+                                               <option value="Bordj-Bou-Arreridj">34-Bordj-Bou-Arreridj</option>
+                                               <option value="Boumerdès">35-Boumerdès</option>
+                                               <option value="El-Tarf">36-El-Tarf</option>
+                                               <option value="Tindouf">37-Tindouf</option>
+                                               <option value="Tissemsilt">38-Tissemsilt</option>
+                                               <option value="El-Oued">39-El-Oued</option>
+                                               <option value="Khenchela">40-Khenchela</option>
+                                               <option value="Souk-Ahras">41-Souk-Ahras</option>
+                                               <option value="Tipaza">42-Tipaza</option>
+                                               <option value="Mila">43-Mila</option>
+                                               <option value="Aïn-Defla">44-Aïn-Defla</option>
+                                               <option value="Naâma">45-Naâma</option>
+                                               <option value="Aïn-Témouchent">46-Aïn-Témouchent</option>
+                                               <option value="Ghardaia">47-Ghardaia</option>
+                                               <option value="Relizane">48-Relizane</option>
+
+                                                </select>
+                                            </div>
+                                              <div class="form-group">
+                                                  <input type="text" class="form-control" placeholder="adresse" name="adr" value="" />
+                                              </div>
+                                              
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div class="form-group">
+                                                  <input type="email" class="form-control" placeholder="Your Email *" name="mail" value="" />
+                                              </div>
+                                              <div class="form-group">
+                                                  <input type="password" class="form-control" placeholder="Password *" name="psw" value="" />
+                                              </div>
+                                              <div class="form-group">
+                                                  <input type="password" class="form-control"  placeholder="Confirm Password *" name="psww" value="" />
+                                              </div>
+                                              <div class="form-group">
+                                                  <input type="text" class="form-control" placeholder="num tel *" name="num" value="" />
+                                              </div>
+                                              <input type="submit" class="btnRegister"  value="Register"/>
+                                          </div>
+                                  </div>
+                                </form>
+                                  </div>
+                                 
+                              </div>
+                          </div>
+                      </div>
+              
+                  </div>				                            
+                   </div>
+
+ <script>var check = function() {
+    if (document.getElementById('password').value ==
+      document.getElementById('confirm_password').value) {
+      document.getElementById('message').style.color = 'green';
+      document.getElementById('message').innerHTML = 'matching';
+    } else {
+      document.getElementById('message').style.color = 'red';
+      document.getElementById('message').innerHTML = 'not matching';
+    }
+  }</script>                  

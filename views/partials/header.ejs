@@ -1,0 +1,107 @@
+<!-- ce nav represente ga3 le header-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+    <a class="navbar-brand mx-3" href="test.html">
+        <i class="fas fa-book-reader h3"></i> <!--icon site-->
+    <span><!--titre site-->
+        MY BOOK'S STORE
+    </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main_nav">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item active">
+          <a class="nav-link" href="../books">ACCEUIL</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="../books/news">NEWS</a>
+        </li>
+        <li class="nav-item dropdown has-megamenu">
+          <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            PARCOURIR
+          </a>
+          <div class="dropdown-menu megamenu" role="menu" data-bs-popper="none"  >
+            <div class="row g-3">
+                <div class="col-lg-3 col-6">
+                    <div class="col-megamenu text-left">
+                        <h6 class="title">GENRE</h6>
+                        <div class="dropdown-divider"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">Fiction</a></li>
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">Polar</a></li>
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">Histoire</a></li>
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">Mystere</a></li>
+                        </ul>
+                        
+                    </div>  <!-- col-megamenu.// -->
+                </div><!-- end col-3 -->
+                
+                <div class="col-lg-3 col-6">
+                    <div class="col-megamenu text-left">
+                      <br>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">Fantaisie</a></li>
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">Policier</a></li>
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">Drame</a></li>
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">Trailler</a></li>
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">Classique</a></li>
+
+                        </ul>
+                    </div>  <!-- col-megamenu.// -->
+                </div><!-- end col-3 -->
+                
+                
+                <div class="col-lg-3 col-6">
+                    <div class="col-megamenu text-left">
+                        <h6 class="title">AUTRE</h6>
+                        <div class="dropdown-divider"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">coin jeunesse</a></li>
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">universitaire</a></li>
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">auto-assistance</a></li>
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">cuisine</a></li>
+                            
+                        </ul>
+                    </div>  <!-- col-megamenu.// -->
+                </div><!-- end col-3 -->
+                <div class="col-lg-3 col-6">
+                    <div class="col-megamenu text-left">
+                        <h6 class="title">JUSTE POUR VOUS !</h6>
+                        <div class="dropdown-divider"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">Best sellers</a></li>
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">Map</a></li>
+                            <li><a href="#" style="color: #14213d; font-weight: 600;">A propos</a></li>
+                            
+                        </ul>
+                    </div>  <!-- col-megamenu.// -->
+                </div><!-- end col-3 -->
+                
+                </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACT</a>
+        </li>
+        <% if(locals.session.isAuth){ %>  
+                <li class="nav-item">
+                  <a class="nav-link" href="../logout">LOGOUT</a>
+                </li>
+                
+
+          <% }else{ %>
+
+                        <li class="nav-item mr-3">
+                          <a class="nav-link" href="../users/login">LOGIN</a>
+                        </li>
+                
+            <% } %> 
+
+
+          
+          
+      </ul>
+    </div>
+  </nav>
+  <!--fin du header-->

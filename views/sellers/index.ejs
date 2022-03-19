@@ -1,0 +1,12 @@
+<h2>Search sellers</h2>
+<form action="/sellers" method="GET">
+  <label>Name</label>
+<!-- appele a la fanction searchoption -->
+  <input type="text" name="name" value="<%= searchOptions.name %>">
+  <button type="submit">Search</button>
+</form>
+<br>
+<!-- pour aficher le resultat de la recherche -->
+<% sellers.forEach(seller => { %>
+  <div><%= seller.name %></div>
+<% }) %>
